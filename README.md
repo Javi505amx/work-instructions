@@ -1,4 +1,4 @@
-# PDF Viewer App
+# Work instruction viewer
 
 Una aplicación React que permite buscar y visualizar archivos PDF basados en un número de Workorder. Utiliza `pdfjs-dist` para renderizar los PDFs y Axios para realizar solicitudes a una API.
 
