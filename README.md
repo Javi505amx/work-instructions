@@ -1,4 +1,4 @@
-# Work instruction viewer - REACT
+# Work instruction viewer - REACT dev
 
 Una aplicación React que permite buscar y visualizar archivos PDF basados en un número de Workorder. Utiliza `pdfjs-dist` para renderizar los PDFs y Axios para realizar solicitudes a una API.
 
