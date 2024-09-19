@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# PDF Viewer App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Una aplicación React que permite buscar y visualizar archivos PDF basados en un número de Workorder. Utiliza `pdfjs-dist` para renderizar los PDFs y Axios para realizar solicitudes a una API.
 
-## Available Scripts
+## Tabla de Contenidos
 
-In the project directory, you can run:
+- [Características](#características)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Contribuciones](#contribuciones)
+- [Licencia](#licencia)
 
-### `npm start`
+## Características
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Búsqueda de archivos PDF mediante un número de Workorder.
+- Visualización de archivos PDF en el navegador.
+- Opción para buscar otra Workorder después de cargar un PDF.
+- Manejo de errores para entradas no válidas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologías Utilizadas
 
-### `npm test`
+- [React](https://reactjs.org/) - Biblioteca de JavaScript para construir interfaces de usuario.
+- [pdfjs-dist](https://github.com/mozilla/pdf.js) - Biblioteca para renderizar PDFs en el navegador.
+- [Axios](https://axios-http.com/) - Cliente HTTP para realizar solicitudes a la API.
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS para estilos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalación
 
-### `npm run build`
+1. Clona el repositorio:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/tu_usuario/pdf-viewer-app.git
+   cd pdf-viewer-app
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Instala las dependencias:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. Asegúrate de que tu servidor API esté en funcionamiento y accesible.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Uso
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Inicia la aplicación:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Abre tu navegador y ve a `http://localhost:3000`.
 
-## Learn More
+3. Ingresa un número de Workorder en el campo de búsqueda y haz clic en "Buscar PDF".
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Si el PDF se encuentra, se mostrará en la aplicación. Puedes hacer clic en "Buscar otra Workorder" para volver a la búsqueda.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Estructura del Proyecto
 
-### Code Splitting
+```
+pdf-viewer-app/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   └── App.js
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contribuciones
 
-### Analyzing the Bundle Size
+Las contribuciones son bienvenidas. Si deseas contribuir, por favor sigue estos pasos:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Haz un fork del proyecto.
+2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
+3. Realiza tus cambios y haz commit (`git commit -m 'Agrega nueva característica'`).
+4. Haz push a la rama (`git push origin feature/nueva-caracteristica`).
+5. Abre un Pull Request.
 
-### Making a Progressive Web App
+## Licencia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
